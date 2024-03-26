@@ -1,0 +1,14 @@
+<div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
+  <h1><%= @task.title%></h1>
+
+  <div style="background-color: #e6e6e6; padding: 10px; border-radius: 5px;">
+    <p><%= @task.details %></p>
+  </div>
+
+  <p><%= check_box_tag "task_completed", "1", @task.completed %> This task is completed</p>
+
+  <%= link_to 'Back to the list', root_path, class: 'back-button' %>
+
+</div>
+
+
